@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart IoT System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Smart IoT</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="recommendation.html">Fertilizer</a></li>
+                    <li><a href="devices.html">Devices</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+                <button class="btn btn-logout">Logout</button>
+            </header>
+            <div class="cards">
+                <div class="card">
+                    <h3>Soil Moisture</h3>
+                    <p class="value good">65%</p>
+                    <p class="timestamp">Last Updated: 1 min ago</p>
+                </div>
+                <div class="card">
+                    <h3>Temperature</h3>
+                    <p class="value moderate">25°C</p>
+                    <p class="timestamp">Last Updated: 1 min ago</p>
+                </div>
+                <div class="card">
+                    <h3>Humidity</h3>
+                    <p class="value critical">30%</p>
+                    <p class="timestamp">Last Updated: 1 min ago</p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>Real-time Data</h3>
+                <div class="chart-placeholder">[Graph/Chart Placeholder]</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
