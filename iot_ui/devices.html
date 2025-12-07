@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Management - Smart IoT System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Smart IoT</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="recommendation.html">Fertilizer</a></li>
+                    <li class="active"><a href="devices.html">Devices</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Device Management</h1>
+                <button class="btn btn-logout">Logout</button>
+            </header>
+            <div class="device-list">
+                <div class="device-item">
+                    <div class="device-info">
+                        <h4>Sensor 1</h4>
+                        <p>Location: Greenhouse</p>
+                    </div>
+                    <div class="device-status online">Online</div>
+                    <div class="device-actions">
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-delete">Delete</button>
+                    </div>
+                </div>
+                <div class="device-item">
+                    <div class="device-info">
+                        <h4>Sensor 2</h4>
+                        <p>Location: Outdoor Field</p>
+                    </div>
+                    <div class="device-status offline">Offline</div>
+                    <div class="device-actions">
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-delete">Delete</button>
+                    </div>
+                </div>
+                <button class="btn btn-add">Add Device</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

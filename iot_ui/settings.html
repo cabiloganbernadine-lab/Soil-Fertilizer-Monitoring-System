@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings / Profile - Smart IoT System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Smart IoT</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="recommendation.html">Fertilizer</a></li>
+                    <li><a href="devices.html">Devices</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li class="active"><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Settings / Profile</h1>
+                <button class="btn btn-logout">Logout</button>
+            </header>
+            <div class="settings-container">
+                <div class="profile-form">
+                    <h3>Edit Profile</h3>
+                    <form>
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" value="John Doe">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="john.doe@example.com">
+                        </div>
+                        <button type="submit" class="btn">Save Changes</button>
+                    </form>
+                </div>
+                <div class="password-form">
+                    <h3>Update Password</h3>
+                    <form>
+                        <div class="input-group">
+                            <label for="current-password">Current Password</label>
+                            <input type="password" id="current-password" name="current-password">
+                        </div>
+                        <div class="input-group">
+                            <label for="new-password">New Password</label>
+                            <input type="password" id="new-password" name="new-password">
+                        </div>
+                        <button type="submit" class="btn">Update Password</button>
+                    </form>
+                </div>
+                <div class="notifications">
+                    <h3>Notifications</h3>
+                    <div class="notification-toggle">
+                        <p>Enable alerts</p>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
